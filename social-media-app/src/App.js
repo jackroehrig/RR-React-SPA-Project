@@ -1,4 +1,6 @@
 import './App.css';
+import Navigation from "./Navbar/Nav"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 /* 
@@ -25,6 +27,12 @@ function App() {
 
   return (
     <div className="App">
+      <Navigation/>
+      <Routes>
+        <Route path="/" element={}/>
+        <Route path="/profile" element={}/>
+      </Routes>
+      
 
     </div>
   );
