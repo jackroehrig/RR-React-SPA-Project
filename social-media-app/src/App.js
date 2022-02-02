@@ -1,5 +1,5 @@
 import './App.css';
-import Navigation from "./Navbar/Nav"
+import Navigation from "./components/Navigation"
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import HomePage from './components/HomePage';
 import Profile from "./components/Profile";
@@ -24,11 +24,11 @@ import Profile from "./components/Profile";
 function App() {
   return (
     <div className="App">
-      <Navigation/>
       <Router>
+      <Navigation />
         <Routes>
           <Route exact path='/' element={<HomePage />} />
-          {/* <Route path="/userProfile/:id" render={() => <Profile />} /> */}
+          <Route path="/userProfile/:id" element={<Profile />} />
         </Routes>
       </Router>
     </div>

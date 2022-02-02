@@ -17,9 +17,9 @@ function HomePage() {
             <div id='posts'>
                 {allPosts.map((postObj, i) => {
                     return (
-                        <Card key={i} className='w-50 mx-auto mb-4 post'>
+                        <Card key={i} className='w-50 mx-auto my-4 post'>
                             <Card.Body>
-                                <Card.Title style={{textAlign: 'left', borderBottom: '2px solid darkgrey'}}><Link to={`/userProfile/${postObj.userId}`} style={{textDecoration: 'none', color: 'black'}}>{postObj.name}</Link></Card.Title>
+                                <Card.Title style={{textAlign: 'left', borderBottom: '2px solid white'}}><Link to={`/userProfile/${postObj.userId}`} style={{textDecoration: 'none', color: 'black'}}>{postObj.name}</Link></Card.Title>
                                 <Card.Text style={{textAlign: 'center'}}>{postObj.post.content}</Card.Text>
                                 <Card.Subtitle style={{textAlign: 'right'}}>{`${postObj.post.date.getMonth() + 1}/${postObj.post.date.getDate()}/${postObj.post.date.getFullYear()}`}</Card.Subtitle>
                             </Card.Body>
@@ -33,7 +33,7 @@ function HomePage() {
                     <Card.Body>
                         <Card.Title>Joe Shiesty</Card.Title>
                         <Card.Subtitle className='mb-2'>1.2 million followers</Card.Subtitle>
-                        <Button href='#'>Follow</Button>
+                        <Button href='#' variant='dark'>Follow</Button>
                     </Card.Body>
                 </Card>
                 <Card className='w-50 m-auto mb-3'>
@@ -41,7 +41,7 @@ function HomePage() {
                     <Card.Body>
                         <Card.Title>Kim Kardashian</Card.Title>
                         <Card.Subtitle className='mb-2'>27.8 million followers</Card.Subtitle>
-                        <Button href='#'>Follow</Button>
+                        <Button href='#' variant='dark'>Follow</Button>
                     </Card.Body>
                 </Card>
                 <Card className='w-50 m-auto mb-3'>
@@ -49,7 +49,7 @@ function HomePage() {
                     <Card.Body>
                         <Card.Title>The Rock</Card.Title>
                         <Card.Subtitle className='mb-2'>11.4 million followers</Card.Subtitle>
-                        <Button href='#'>Follow</Button>
+                        <Button href='#' variant='dark'>Follow</Button>
                     </Card.Body>
                 </Card>
             </div>
