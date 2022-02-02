@@ -1,4 +1,5 @@
 import './App.css';
+import Navigation from "./Navbar/Nav"
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import HomePage from './components/HomePage';
 import Profile from "./components/Profile";
@@ -23,7 +24,7 @@ import Profile from "./components/Profile";
 function App() {
   return (
     <div className="App">
-      <h1 className='p-3'>Tinker Nav Area</h1>
+      <Navigation/>
       <Router>
         <Routes>
           <Route exact path='/' element={<HomePage />} />
