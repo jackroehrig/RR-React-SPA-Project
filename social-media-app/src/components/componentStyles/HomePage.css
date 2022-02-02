@@ -1,0 +1,14 @@
+.post {
+    border-radius: 10px;
+}
+
+#posts {
+    flex: 3;
+    padding-top: 3vh;
+}
+
+#recommended {
+    flex: 1;
+    padding-top: 3vh;
+}
+

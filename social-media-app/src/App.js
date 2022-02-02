@@ -1,7 +1,8 @@
-import "./App.css";
+import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import HomePage from './components/HomePage';
 import userProfile from "./components/userProfile";
 import React, { useState, useEffect, createContext } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import usersData from "./usersData";
 
 /* 
@@ -17,10 +18,6 @@ import usersData from "./usersData";
           Profile Info
           What I'm Tinking
           Tinks
-        ???
-        Searching Profiles/Tinks
-          SearchBar
-          ResultsArea
 
     */
 
@@ -44,12 +41,11 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className='p-3'>Tinker Nav Area</h1>
       <Router>
         <Routes>
-          <Route
-            path="/userProfile/:id"
-            render={() => <userProfile user={user} />}
-          />
+          <Route exact path='/' element={<HomePage />} />
+          <Route path="/userProfile/:id" element={<userProfile />} />
         </Routes>
       </Router>
     </div>
