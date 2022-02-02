@@ -1,7 +1,8 @@
 import './App.css';
 import Navigation from "./Navbar/Nav"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import HomePage from './components/HomePage';
+import Profile from "./components/Profile";
 
 /* 
     
@@ -16,24 +17,20 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
           Profile Info
           What I'm Tinking
           Tinks
-        ???
-        Searching Profiles/Tinks
-          SearchBar
-          ResultsArea
 
     */
 
-function App() {
 
+function App() {
   return (
     <div className="App">
       <Navigation/>
-      <Routes>
-        <Route path="/" element={}/>
-        <Route path="/profile" element={}/>
-      </Routes>
-      
-
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<HomePage />} />
+          {/* <Route path="/userProfile/:id" render={() => <Profile />} /> */}
+        </Routes>
+      </Router>
     </div>
   );
 }
