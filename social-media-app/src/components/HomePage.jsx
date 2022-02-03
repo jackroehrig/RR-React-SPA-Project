@@ -33,7 +33,7 @@ function HomePage() {
                     <Card.Body>
                         <Card.Title>Joe Shiesty</Card.Title>
                         <Card.Subtitle className='mb-2'>1.2 million followers</Card.Subtitle>
-                        <Button href='#' variant='dark'>Follow</Button>
+                        <Button variant='dark'>Follow</Button>
                     </Card.Body>
                 </Card>
                 <Card className='w-50 m-auto mb-3'>
@@ -41,7 +41,7 @@ function HomePage() {
                     <Card.Body>
                         <Card.Title>Kim Kardashian</Card.Title>
                         <Card.Subtitle className='mb-2'>27.8 million followers</Card.Subtitle>
-                        <Button href='#' variant='dark'>Follow</Button>
+                        <Button variant='dark'>Follow</Button>
                     </Card.Body>
                 </Card>
                 <Card className='w-50 m-auto mb-3'>
@@ -49,7 +49,7 @@ function HomePage() {
                     <Card.Body>
                         <Card.Title>The Rock</Card.Title>
                         <Card.Subtitle className='mb-2'>11.4 million followers</Card.Subtitle>
-                        <Button href='#' variant='dark'>Follow</Button>
+                        <Button variant='dark'>Follow</Button>
                     </Card.Body>
                 </Card>
             </div>

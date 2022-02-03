@@ -1,0 +1,38 @@
+#login-window {
+    position: fixed;
+    width: 60%;
+    height: 60vh;
+    top: 20%;
+    left: 20%;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(248, 144, 144);
+    z-index: 10;
+}
+
+#login-window input {
+    margin: 15px 5.5em 15px 1em;
+}
+
+#submit {
+    margin-left: 5.5em!important;
+}
+
+#close {
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    right: 1vw;
+}
+
+#close:hover {
+    cursor: pointer;
+}
+
+#main-login-area {
+    height: 40vh;
+    width: 80%;
+    position: absolute;
+    top: 8vh;
+    left: 10%;
+}
